@@ -1,0 +1,12 @@
+Комбинаторы
+- для потомкив:
+
+
+для (наступных) сусидних:
+
+body > article {
+  border: 1px solid red;
+}
+body * {
+  border: 5px solid green;
+}
