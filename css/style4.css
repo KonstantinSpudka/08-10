@@ -1,31 +1,66 @@
 * {
-  margin: 0;
+  box-sizing: border-box;
 }
-
 html {
-  font-family: Montserrak;
-}
-body {
-  font-size: 20px;
+  text-align: center;
+  font-family: sans-serif;
 }
 
-article + article {
-  background: blue;
-}
-footer > ul {
-  border: 1px dotted green;
-}
-ul + p {
-  border: 1px dotted green;
-}
-h2 + p {
-  background: yellow;
+.userCars {
+  border: 2px solid red;
+
+  min-width: 300px;
+  max-width: 200px;
+  width: 100%;
 }
 
-/*p * {
-  text-shadow: 0 -10px 0.1em orange;
-}*/
+.userCardBack {
+  width: 100%;
+  height: 100%;
+  /*background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAzQG-_sLj5bvNRIaCKv-s2wbU6ZbgU6Jc4snT2bujRDhydHjGhgopaRHI5VrohTcA6qE&usqp=CAU);*/
 
-article > p {
-  text-shadow: 0 -10px 0.1em orange;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.userPro {
+  width: 75%;
+  height: 75%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid red;
+  margin-top: -37px;
+}
+
+.userName {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.userInfo {
+  padding: 0 10px;
+  color: grey;
+}
+
+.userLink {
+  display: inline-block;
+  color: lightslategray;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid lightslategray;
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+
+.userFolowers {
+  display: inline-block;
+  width: 33.33%;
+  font-size: initial;
+  padding: 10px;
+  border-top: 2px solid green;
+}
+.userFolowers + .userFolowers {
+  border-left: 2px solid gray;
 }
